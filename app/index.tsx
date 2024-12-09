@@ -7,7 +7,7 @@ type Props = {};
 const WelcomeScreen = (props: Props) => {
   return (
     <View style={styles.container}>
-      <Text>Welcome Screen</Text>
+      <Text>Welcome Screen josh</Text>
       <Link href={"/signin"} asChild>
         <TouchableOpacity>
           <Text>Go to SignIn Screen</Text>
