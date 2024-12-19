@@ -19,6 +19,7 @@ const WelcomeScreen = (props: Props) => {
       >
 
       <Text>Welcome Screeneeeeee</Text>
+      <Text>Welcome Screen josh</Text>
       <Link href={"/signin"} asChild>
         <TouchableOpacity>
           <Text>Go to SignIn Screen</Text>
