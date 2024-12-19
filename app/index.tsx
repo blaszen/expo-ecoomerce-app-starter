@@ -10,17 +10,18 @@ import { Link, Stack } from "expo-router";
 import { LinearGradient } from "expo-linear-gradient";
 import { Colors } from "@/constants/Colors";
 import { Ionicons } from "@expo/vector-icons";
+import OnboardingSVG from '@/assets/images/undraw_chef.svg'
 type Props = {};
 
 const WelcomeScreen = (props: Props) => {
   return (
     <>
       <Stack.Screen options={{ headerShown: false }} />
-      <ImageBackground
-        source={require("@/assets/images/ecommerce-splash.jpg")}
-        style={{ flex: 1 }}
-        resizeMode="cover"
-      >
+          <OnboardingSVG
+          style={{position:'absolute',alignSelf:'center'}}
+          >
+
+          </OnboardingSVG>
         <View style={styles.container}>
           <LinearGradient
             colors={[
@@ -31,7 +32,7 @@ const WelcomeScreen = (props: Props) => {
             style={styles.background}
           >
             <View style={styles.wrapper}>
-              <Text style={styles.title}>ShopX</Text>
+              <Text style={styles.title}>Menyu</Text>
               <Text style={styles.description}>Everything in one place</Text>
 
             <View style={styles.loginWrapper}>
@@ -73,7 +74,6 @@ const WelcomeScreen = (props: Props) => {
             </View>
           </LinearGradient>
         </View>
-      </ImageBackground>
     </>
   );
 };
