@@ -18,7 +18,7 @@ const WelcomeScreen = (props: Props) => {
           colors={["transparent", 'rgba(255,255,255,0.9)']}
       >
 
-      <Text>Welcome Screeneee</Text>
+      <Text>Welcome Screeneeeeee</Text>
       <Link href={"/signin"} asChild>
         <TouchableOpacity>
           <Text>Go to SignIn Screen</Text>
