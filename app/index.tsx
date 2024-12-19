@@ -33,7 +33,7 @@ const WelcomeScreen = (props: Props) => {
           >
             <View style={styles.wrapper}>
               <Text style={styles.title}>Menyu</Text>
-              <Text style={styles.description}>Everything in one place</Text>
+              <Text style={styles.description}>An easier cooking experience</Text>
 
             <View style={styles.loginWrapper}>
               <Link href={"/signin"} asChild>
@@ -68,7 +68,7 @@ const WelcomeScreen = (props: Props) => {
 
               <Link href={"/signup"} asChild>
                 <TouchableOpacity>
-                  <Text>Go to SignUp Screen</Text>
+                  <Text style={{color:Colors.primary}}>SignUp</Text>
                 </TouchableOpacity>
               </Link>
             </View>
@@ -123,6 +123,10 @@ const styles = StyleSheet.create({
     borderColor:Colors.gray,
     borderWidth:StyleSheet.hairlineWidth,
     borderRadius:25,
+    borderTopWidth:2,
+    borderBottomWidth:2,
+    borderRightWidth:2,
+    borderLeftWidth:2,
     alignItems:'center',
     justifyContent:'center',
     gap:5,
