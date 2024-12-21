@@ -18,9 +18,9 @@ export default function TabLayout() {
         )
       }} />
       <Tabs.Screen name='notifications' options={{
-        title: 'Notification',
+        title: 'Create',
         tabBarIcon: ({color}) => (
-          <Ionicons name='notifications-outline' size={22} color={color} />
+          <Ionicons name='add-circle-outline' size={25} color={'green'} />
         )
       }} />
       <Tabs.Screen name='cart' options={{
