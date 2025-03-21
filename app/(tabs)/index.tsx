@@ -23,17 +23,22 @@ const HomeScreen = (props: Props) => {
     </View>
       {/* SearchBar */}
     <View style={styles.searchContainer}>
+    <Ionicons name="search-outline" size={20} color={'black'}/>
         <TextInput
           style={styles.input}
-          placeholder="Search..."
+          placeholder="What do you want to eat?"
           value={searchQuery}
           onChangeText={handleSearch}
           autoCorrect={false}
           clearButtonMode="always"
         />
+            <Ionicons name="close-outline" size={20} color={'black'}/>
+      </View>
+      {/*Categories */}
+      <View style={styles.categories}>
+        <Text>Rice</Text>
       </View>
 
-      
     </View>
   )
 }
@@ -61,14 +66,33 @@ const styles = StyleSheet.create({
     fontWeight:'bold',
   },
   searchContainer: {
-    marginBottom: 16,
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#fff",
+    borderRadius: 15,
+    shadowColor: "#000",
+    shadowOpacity: 0.1,
+    shadowOffset: { width: 0, height: 1 },
+    elevation: 2,
+    marginTop:10,
+    paddingLeft:10,
+    paddingRight:10
+
   },
   input: {
+    flex: 1,
+    fontSize: 16,
+  },
+  categories:{
+    marginTop:10,
     height: 40,
+    width:90,
     borderColor: 'gray',
     borderWidth: 1,
     paddingHorizontal: 10,
-    borderRadius: 5,
-  },
+    borderRadius: 25,
+    alignItems:'center',
+    justifyContent:'center'
+  }
 
 })
