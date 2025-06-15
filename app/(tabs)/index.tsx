@@ -58,7 +58,7 @@ const HomeScreen = (props: Props) => {
       </View>
       {/*Categories */}
       <View style={styles.categories}>
-        <Text>American</Text>
+        <Text>FUCK DONALD TRUMP</Text>
       </View>
     </View>
   );
